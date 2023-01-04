@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussa</title>
+
+    <!-- Link untuk Icon dan CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+    <!--Navigasi bar (diatas)-->
+    <nav>
+
+    
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home-section">
+        <!-- Coursel (Gambar ganti-ganti)-->
+        <div class="carousel">
+            <img src="assets/images/MUSSA.png" class="active" alt="">
+            <img src="assets/images/cover 2.png" alt="">
+            <img src="assets/images/cover 3.png" alt="">
+            <img src="assets/images/cover 4.png" alt="">
+            <img src="assets/images/cover 5.png" alt="">
+        </div>
+
+        <!-- Playlist -->
+        <h1 class="heading">Indonesia Heritage</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/Tradisional.png" class="playlist-card-img-daerah" alt="">
+                <p class="playlist-card-name">Lagu Daerah</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/nasional.png" class="playlist-card-img-nasional" alt="">
+                <p class="playlist-card-name">Lagu Nasional</p>   
+            </div>
+        </div>
+
+        <h1 class="heading">Recommend For You</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/2023.png" class="playlist-card-img-hits" alt="">
+                <p class="playlist-card-name">This Year Hits</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/MADE.png" class="playlist-card-img-madefy" alt="">
+                <p class="playlist-card-name">Made For you</p>   
+            </div>
+        </div>
+    </section>
+
+    <!-- Music player control -->
+    <section class="music-player-section">
+
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+        <img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+
+        <h1 class="current-song-name">song 1</h1>
+        <p class="artist-name hide">artist 1</p>
+        <img src="assets/images/cover 1.png" class="cover hide">
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+    <!-- LIST NORMAL -->
+    <section class="playlist">
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+        <h1 class="title">playlist</h1>
+
+        <!-- Queue card -->
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 1.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ampar-ampar pisang</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 2.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Apuse</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 3.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Buengong Jeumpa</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 4.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Jali-Jali</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kicir-Kicir</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gumdul-Gundul Pacul</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gambang Suling</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Lir ilir</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kampung Nan Jauh di Mato</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Mande-Mande</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Tokecang</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Manise</p>
+        </div>
+
+    </section>
+
+    <!-- LIST DAERAH -->
+    <section class="daerah">
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+        <h1 class="title">Lagu Daerah</h1>
+
+        <!-- Queue card -->
+        <div class="queue">
+            <div class="queue-cover active">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ampar-ampar pisang</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Apuse</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Buengong Jeumpa</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Jali-Jali</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kicir-Kicir</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gumdul-Gundul Pacul</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gambang Suling</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Lir ilir</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kampung Nan Jauh di Mato</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Mande-Mande</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Tokecang</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Tradisional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Manise</p>
+        </div>
+
+    </section>
+
+    <!-- LIST NASIONAL -->
+    <section class="Nasional">
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+        <h1 class="title">Lagu Nasional</h1>
+
+        <!-- Queue card -->
+        <div class="queue qnasional">
+            <div class="queue-cover active">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Indonesia Raya</p>
+        </div>
+
+        <div class="queue qnasional">
+            <div class="queue-cover">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Hari Merdeka</p>
+        </div>
+
+        <div class="queue qnasional">
+            <div class="queue-cover">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Garuda Pancasila</p>
+        </div>
+
+        <div class="queue qnasional">
+            <div class="queue-cover">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name qnasional">Berkibarlah Benderaku</p>
+        </div>
+
+        <div class="queue qnasional">
+            <div class="queue-cover">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kicir-Kicir</p>
+        </div>
+        
+        <div class="queue qnasional">
+            <div class="queue-cover">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Bagimu Negeri</p>
+        </div>
+
+        <div class="queue qnasional">
+            <div class="queue-cover">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ibu Pertiwi</p>
+        </div>
+
+        <div class="queue qnasional">
+            <div class="queue-cover">
+                <img src="assets/images/Nasional.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Indonesia Pusaka</p>
+        </div> <!-- Lagu nasional sampai sini aja 
+                    gausah ditambahin -->
+
+
+
+    </section>
+
+    <!-- LIST TYH -->
+    <section class="hits">
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+        <h1 class="title">This Year Hits</h1>
+
+        <!-- Queue card -->
+        <div class="queue qhits">
+            <div class="queue-cover active">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Indonesia Raya</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Apuse</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Buengong Jeumpa</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Garuda Pancasila</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kicir-Kicir</p>
+        </div>
+        
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gumdul-Gundul Pacul</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gambang Suling</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Lir ilir</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kampung Nan Jauh di Mato</p>
+        </div>
+
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Mande-Mande</p>
+        </div>
+        
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Tokecang</p>
+        </div>
+        
+        <div class="queue qhits">
+            <div class="queue-cover">
+                <img src="assets/images/2023.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Manise</p>
+        </div>
+
+    </section>
+
+    <!-- LIST Made For You -->
+    <section class="playlist madefy">
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+        <h1 class="title">Made for You</h1>
+
+        <!-- Queue card -->
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ampar-ampar pisang</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Apuse</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Buengong Jeumpa</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Jali-Jali</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kicir-Kicir</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gundul-Gundul Pacul</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gambang Suling</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Lir ilir</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kampung Nan Jauh di Mato</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Mande-Mande</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Tokecang</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/MADE.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Manise</p>
+        </div>
+
+    </section>
+
+    <script src="data.js"> </script>
+    <script src="app.js"> </script>
+</body>
+</html> 
